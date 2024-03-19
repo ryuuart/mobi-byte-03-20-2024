@@ -16,22 +16,24 @@ title: MOMO'S WONDERLAND
 </head>
 <body>
     <main>
-        <article>
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" value="MOMO">
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <div>
-                    {% render "assets/images/momo_logo.svg" %}
-                    <textarea id="message">asdf</textarea>
+        <div class="content-wrapper">
+            <article class="message--box">
+                <div class="message--name--box">
+                    <label for="name">Name:</label>
+                    <input disabled type="text" id="name" value="MOMO">
                 </div>
-            </div>
-        </article>
-        <section>
-            <button>Green</button>
-        </section>
+                <div>
+                    <label for="message">Message:</label>
+                    <div class="momo-pc--box">
+                        <div class="momo-pc--logo">{% render "assets/images/momo_logo.svg" %}</div>
+                        <textarea disabled id="message" class="momo-pc--textarea">asdf</textarea>
+                    </div>
+                </div>
+            </article>
+            <section class="buttons--box">
+                <button>Green</button>
+            </section>
+        </div>
         <div>DANGER IT'S A MARQUEE</div>
     </main>
     <div>^_^</div>

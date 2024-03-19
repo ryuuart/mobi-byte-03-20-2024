@@ -20,16 +20,90 @@ body {
   font-family: "DotGothic16", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
 
   color: var(--color-text);
   text-shadow: var(--color-text-shadow) 0 0 0.25em;
 
-  background: repeat-x bottom/125% url("/images/pattern.svg"), var(--image-bg);
+  background: repeat-x bottom/55vh url("/images/pattern.svg"), var(--image-bg);
 
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  margin: auto;
+
+  max-width: 33ch;
 }
 
 #momo-pc-logo * {
   fill: var(--color-accent);
+}
+
+.message--box,
+.buttons--box {
+  margin: 2rem 1.5rem;
+}
+
+.message--name--box {
+  display: flex;
+}
+
+input[type="text"] {
+  min-width: 0;
+
+  margin: 0 0.5rem;
+}
+
+input[type="text"],
+textarea {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.25);
+
+  font: inherit;
+  text-shadow: inherit;
+
+  border: 0;
+  border-radius: 0.5rem;
+
+  padding: 0.25rem 1rem;
+}
+
+.momo-pc--box {
+  background: white;
+  border-radius: 1.5rem;
+
+  margin: 1rem auto;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  height: 100vh;
+  max-height: 40vh;
+}
+
+.momo-pc--textarea {
+  background: var(--color-accent);
+
+  margin: 0 -0.15rem -0.15rem 1rem;
+  padding: 0.5rem 1rem;
+
+  color: white;
+  text-shadow: none;
+
+  border-radius: 1rem;
+}
+
+.momo-pc--logo {
+  flex-grow: 1;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  position: relative;
+  bottom: 1.5rem;
+  left: 0.25rem;
 }
