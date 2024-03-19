@@ -1,0 +1,35 @@
+:root {
+  --color-text: black;
+  --color-text-shadow: white;
+  --color-accent: rgba(255, 159, 194, 1);
+  --color-accent-transparent: rgba(255, 159, 194, 0);
+  --image-bg: linear-gradient(
+    to bottom,
+    var(--color-accent),
+    var(--color-accent-transparent)
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.15em;
+
+  color: var(--color-text);
+  text-shadow: var(--color-text-shadow) 0 0 0.25em;
+
+  background: repeat-x bottom/125% url("/images/pattern.svg"), var(--image-bg);
+
+  height: 100vh;
+}
+
+#momo-pc-logo * {
+  fill: var(--color-accent);
+}
