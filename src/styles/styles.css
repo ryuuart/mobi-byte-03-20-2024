@@ -107,3 +107,44 @@ textarea {
   bottom: 1.5rem;
   left: 0.25rem;
 }
+
+button {
+  position: relative;
+
+  appearance: none;
+  border: none;
+  background: none;
+
+  color: black;
+
+  font: inherit;
+  font-size: 1rem;
+
+  background: lime;
+
+  border: 2px solid white;
+
+  border-radius: 0.75rem;
+
+  padding: 0.25rem 2rem;
+}
+
+.buttons--background {
+  position: absolute;
+  inset: 0;
+
+  box-shadow: inset 0px 12px 16px 2px var(--color-accent);
+  border-radius: inherit;
+
+  mix-blend-mode: screen;
+
+  z-index: 0;
+}
+
+.buttons--foreground {
+  position: relative;
+  z-index: 1;
+
+  opacity: 0.75;
+  mix-blend-mode: multiply;
+}
