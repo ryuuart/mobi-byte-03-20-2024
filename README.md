@@ -4,7 +4,7 @@ A motion postcard for your friends! This is paired with a MOBI Byte Workshop.
 
 ## Slides
 
-[Figma slides](https://www.figma.com/proto/9mM9QE7VA9ToBlN9Uw2SrN/MOBI-Byte---03%2F20%2F2024?page-id=28%3A1444&type=design&node-id=28-1445&viewport=268%2C-4404%2C0.12&t=c5mymEbeP40NwcP5-1&scaling=contain&mode=design);
+[Figma slides](https://www.figma.com/proto/9mM9QE7VA9ToBlN9Uw2SrN/MOBI-Byte---03%2F20%2F2024?page-id=28%3A1444&type=design&node-id=28-1445&viewport=268%2C-4404%2C0.12&t=c5mymEbeP40NwcP5-1&scaling=contain&mode=design)
 
 ## Useful Resources
 
