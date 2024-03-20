@@ -109,9 +109,11 @@ textarea {
   z-index: 1;
 }
 
-.momo-pc--textarea {
+textarea {
   background: var(--color-accent);
+}
 
+.momo-pc--textarea {
   margin: 0 -0.15rem -0.15rem 1rem;
   padding: 0.5rem 1rem;
 
