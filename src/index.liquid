@@ -1,5 +1,7 @@
 ---
 title: MOMO'S WONDERLAND
+name: MOMO
+message: asdf
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -21,13 +23,13 @@ title: MOMO'S WONDERLAND
             <article class="message--box">
                 <div class="message--name--box">
                     <label for="name">Name:</label>
-                    <input disabled type="text" id="name" value="MOMO">
+                    <input disabled type="text" id="name" value={{ name }}>
                 </div>
                 <div class="message--textarea--box">
                     <label for="message">Message:</label>
                     <div class="momo-pc--box">
                         <div class="momo-pc--logo">{% render "assets/images/momo_logo.svg" %}</div>
-                        <textarea disabled id="message" class="momo-pc--textarea">asdf</textarea>
+                        <textarea disabled id="message" class="momo-pc--textarea">{{ message }}</textarea>
                     </div>
                 </div>
             </article>
