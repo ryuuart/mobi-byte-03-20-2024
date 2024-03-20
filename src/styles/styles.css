@@ -5,8 +5,8 @@
   --color-accent-transparent: rgba(255, 159, 194, 0);
   --image-bg: linear-gradient(
     to bottom,
-    var(--color-accent),
-    var(--color-accent-transparent)
+    var(--color-accent-transparent),
+    white
   );
 }
 
@@ -37,13 +37,14 @@ body {
 
   display: flex;
   flex-flow: column nowrap;
+  overflow: hidden;
 }
 
 main {
   height: 100%;
 
   overflow-x: hidden;
-  background: repeat-x bottom/55vh url("/images/pattern.svg");
+  background: repeat-x bottom/55vh url("/images/pattern.svg"), var(--image-bg);
 }
 
 .content-wrapper {
@@ -202,4 +203,15 @@ button {
 .message--textarea--box {
   display: flex;
   flex-flow: column nowrap;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+
+  width: 3rem;
+  height: 3rem;
 }
