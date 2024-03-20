@@ -17,12 +17,13 @@ title: MOMO'S WONDERLAND
 <body>
     <main>
         <div class="content-wrapper">
+            {% render "assets/images/star.svg" %}
             <article class="message--box">
                 <div class="message--name--box">
                     <label for="name">Name:</label>
                     <input disabled type="text" id="name" value="MOMO">
                 </div>
-                <div>
+                <div class="message--textarea--box">
                     <label for="message">Message:</label>
                     <div class="momo-pc--box">
                         <div class="momo-pc--logo">{% render "assets/images/momo_logo.svg" %}</div>
