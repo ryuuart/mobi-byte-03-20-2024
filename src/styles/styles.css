@@ -30,7 +30,8 @@ body {
   color: var(--color-text);
   text-shadow: var(--color-text-shadow) 0 0 0.25em;
 
-  background: repeat-x bottom/55vh url("/images/pattern.svg"), var(--image-bg);
+  /* background: repeat-x bottom/55vh url("/images/pattern.svg"), var(--image-bg); */
+  background: var(--color-accent);
 
   height: 100%;
 
@@ -42,6 +43,7 @@ main {
   height: 100%;
 
   overflow-x: hidden;
+  background: repeat-x bottom/55vh url("/images/pattern.svg");
 }
 
 .content-wrapper {

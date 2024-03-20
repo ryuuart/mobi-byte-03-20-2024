@@ -17,7 +17,7 @@ title: MOMO'S WONDERLAND
 <body>
     <main>
         <div class="content-wrapper">
-            {% render "assets/images/star.svg" %}
+            {% render "components/star.liquid" %}
             <article class="message--box">
                 <div class="message--name--box">
                     <label for="name">Name:</label>
@@ -32,11 +32,11 @@ title: MOMO'S WONDERLAND
                 </div>
             </article>
             <section class="buttons--box">
-                <button><div class="buttons--foreground">Green</div><div class="buttons--background"></div></button>
+                {% render "components/buttons.liquid" %}
             </section>
-            <div class="face--box">^_^</div>
+            {% render "components/faces.liquid" %}
         </div>
-        <div>DANGER IT'S A MARQUEE</div>
+        {% render "components/marquee.liquid" %}
     </main>
 </body>
 </html>
