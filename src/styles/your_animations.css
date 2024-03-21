@@ -1,0 +1,102 @@
+:root {
+  --color-accent: blue;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+/* The inner marquee MUST span 100 viewport width */
+/* A marquee works by having the start and end position equal at the beginning and end of the loop. */
+/* This way guarantees this */
+.marquee--clone {
+  display: flex;
+  gap: 1rem;
+  min-width: 100vw;
+}
+
+.marquee--inner {
+  display: flex;
+  animation: marquee 5s linear 0s infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* rotating star */
+.star {
+  animation: rotate360 5s linear 0s infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* hover button */
+button {
+  background: black;
+  color: white;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-property: background, color;
+}
+
+button:hover {
+  background: lime;
+  color: black;
+}
+
+/*  button hover */
+button {
+  animation: hover 3s ease-in-out 0s infinite;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* circle face random directions*/
+
+/* 2nd face and so on */
+.face--box:nth-of-type(2) {
+  left: 8rem;
+  bottom: 1rem;
+  rotate: 350deg;
+}
+.face--box:nth-of-type(3) {
+  left: 20rem;
+  bottom: -0.5rem;
+  rotate: 260deg;
+}
+.face--box:nth-of-type(4) {
+  left: 15rem;
+  bottom: -4rem;
+  rotate: 25deg;
+}
+.face--box:nth-of-type(5) {
+  left: 12rem;
+  top: 1rem;
+  rotate: 35deg;
+}
